@@ -1,0 +1,201 @@
+#:kivy 2.1.0
+#:import Window kivy.core.window.Window
+
+<MyGrid>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgba: 0.176, 0.176, 0.176, 1
+
+            Rectangle:
+                pos: root.width / 3.05, root.height / 1.5
+                size: root.width / 2.89, root.height / 10.9
+
+            Rectangle:
+                pos: root.width / 3.05, root.height / 1.9
+                size: root.width / 2.89, root.height / 10.9
+            
+            Rectangle:
+                pos: root.width / 3.05, root.height / 2.6
+                size: root.width / 2.89, root.height / 10.9
+
+            Rectangle:
+                pos: root.width / 3.05, root.height / 4
+                size: root.width / 2.89, root.height / 10.9
+
+            Color:
+                rgba: 0.196, 0.196, 0.196, 1
+
+            Rectangle:
+                pos: root.width / 2.5, root.height / 1.48
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 1.85, root.height / 1.48
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 2.5, root.height / 1.88
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 1.85, root.height / 1.88
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 2.5, root.height / 2.58
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 1.85, root.height / 2.58
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 2.5, root.height / 3.98
+                size: root.width / 8, root.height / 15.21
+
+            Rectangle:
+                pos: root.width / 1.85, root.height / 3.98
+                size: root.width / 8, root.height / 15.21
+
+        Image:
+            source: "img/efecta95.png"
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None, None
+            size: root.width / 17, root.height / 12.21
+            pos: root.width / 3.02, root.height / 1.49
+
+        Image:
+            source: "img/efectadiesel.png"
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None, None
+            size: root.width / 17, root.height / 12.21
+            pos: root.width / 3.02, root.height / 1.89
+
+        Image:
+            source: "img/verva98.png"
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None, None
+            size: root.width / 17, root.height / 12.21
+            pos: root.width / 3.02, root.height / 2.59
+
+        Image:
+            source: "img/vervadiesel.png"
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None, None
+            size: root.width / 17, root.height / 12.21
+            pos: root.width / 3.02, root.height / 3.99
+        
+        Label:
+            text: "Nasze i hurtowe ceny paliw*"
+            pos: root.width / 2.9, root.height / 1.3
+            font_size: self.width / 40
+            text_size: self.size
+            
+        Label:
+            text: "cena paliwa / L"
+            pos: root.width / 2.4, root.height / 1.41
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "cena paliwa / L"
+            pos: root.width / 2.4, root.height / 1.77
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "cena paliwa / L"
+            pos: root.width / 2.4, root.height / 2.38
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "cena paliwa / L"
+            pos: root.width / 2.4, root.height / 3.5
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "Hurtowa cena"
+            pos: root.width / 1.78, root.height / 1.41
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "Hurtowa cena"
+            pos: root.width / 1.78, root.height / 1.77
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "Hurtowa cena"
+            pos: root.width / 1.78, root.height / 2.38
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            text: "Hurtowa cena"
+            pos: root.width / 1.78, root.height / 3.5
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: pb95
+            text: ""
+            pos: root.width / 2.25, root.height / 1.47
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: diesel
+            text: ""
+            pos: root.width / 2.25, root.height / 1.86
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: pb98
+            text: ""
+            pos: root.width / 2.25, root.height / 2.55
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: diesel2
+            text: ""
+            pos: root.width / 2.25, root.height / 3.8
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: pb95_tax
+            text: ""
+            pos: root.width / 1.70, root.height / 1.47
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: diesel_tax
+            text: ""
+            pos: root.width / 1.70, root.height / 1.87
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: pb98_tax
+            text: ""
+            pos: root.width / 1.70, root.height / 2.53
+            font_size: self.width / 80
+            text_size: self.size
+
+        Label:
+            id: diesel2_tax
+            text: ""
+            pos: root.width / 1.70, root.height / 3.8
+            font_size: self.width / 80
+            text_size: self.size
