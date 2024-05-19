@@ -11,6 +11,8 @@ class MyGrid(BoxLayout, FloatLayout):
 class MyApp(App):
     def build(self):
         Window.clearcolor = (0.113, 0.122, 0.129, 1)
+        self.title = "Orlen Prices"
+        self.icon = "img/logo.jpg"
 
         response =  requests.get('https://tool.orlen.pl/api/wholesalefuelprices')
 
